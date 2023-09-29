@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- box icons -->
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="./bootstrap.css">
+    
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- fastbootstrap
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fastbootstrap@1.1.2/dist/css/fastbootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/fastbootstrap@1.1.2/dist/js/fastbootstrap.min.js"></script> -->
+
+    <title>TourZo</title>
+</head>
+<body class="vh-100" style="background-color: #fffafa;">
+    <!-- navbar -->
+    <nav class="navbar bg-body-primary navbar-expand-md fixed-top fw-medium " style="font-size: 20px; font-weight: 600; position: relative; box-shadow: none;">
+      <div class="container-fluid">
+          <!-- Logo and Offcanvas Button Container -->
+          <div class="d-flex align-items-center">
+              <!-- logo -->
+              <a class="navbar-brand fs-5 " href="#"><img src="./Images/logo.svg" class=" logo img-fluid logo" alt="" style="margin-left: 10%;"></a>
+              <!-- toggle btn -->
+              <button class="navbar-toggler me-4 shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                  <box-icon name='menu-alt-right' size="md" color='#008080'></box-icon>
+              </button>
+          </div>
+  
+          <!-- sidebar -->
+          <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header ">
+                  <a class="navbar-brand fs-5 " href="#"><img src="./Images/logo.svg" class=" logo img-fluid logo" alt=""></a>
+                  <button type="button" class="btn-close me-2 shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class=" container offcanvas-body d-flex flex-column p-4 flex-md-row">
+                  <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 align-items-center " >
+                      <li class="nav-item mx-2">
+                          <a class="nav-link "  href="#" style="font-weight: 600;">Home</a>
+                      </li>
+                      <li class="nav-item mx-2">
+                          <a class="nav-link" href="#" style="font-weight: 600;">Destinations</a>
+                      </li>
+                      <li class="nav-item mx-2">
+                          <a class="nav-link" href="#" style="font-weight: 600;">About</a>
+                      </li>
+                      <li class="nav-item mx-2">
+                          <a class="nav-link" href="#" style="font-weight: 600;">Services</a>
+                      </li>
+                  </ul>
+  
+                  <!-- login/signup -->
+                  <div class="d-flex flex-column p-1 align-items-center gap-5 flex-md-row">
+                      <a href="#login" class="text-dark text-decoration-none" style="font-weight: 600;">Login</a>
+                      <a href="#Signup" class="text-white text-decoration-none px-5 py-2 rounded-5 " style="background-color: #008080;font-weight: 600;">Signup</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </nav>
+
+      <!-- hero section -->
+      <section class="hero" style="position: relative;">
+        <div class="container-fluid">
+          <div class="row flex-column-reverse flex-md-row justify-content-center align-items-center">
+            <!-- text and logos -->
+            <div class="container-fluid">
+              <div class="row flex-column-reverse flex-md-row justify-content-center align-items-center">
+                  <!-- Text and logos column -->
+                  <div class="col-md-4 col-12 align-items-center">
+                      <div class="text d-flex justify-content-center align-items-center text-center" style="font-size: 7vh; font-weight: 700;">
+                          A new world <br>awaits you.
+                      </div>
+                      <div class="tagline fw-medium d-flex justify-content-center align-items-center text-center" style="font-size: 30px;">Explore the World with Tourzo</div>
+                      <div class="p-3 p-md-5 d-flex justify-content-center align-items-center text-center">
+                          <a href="#Discover" class="text-white text-decoration-none px-4 px-md-5 py-2 rounded-5 fs-4 " style="background-color: #008080;">Discover More</a>
+                      </div>
+                      <div class="d-flex flex-wrap gap-2 gap-md-5 justify-content-center my-4">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/AirAsia_New_Logo.svg/2048px-AirAsia_New_Logo.svg.png" alt="" style="width: 15%;" class="grayscale">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/The_Leela_Palaces%2C_Hotels_and_Resorts_logo.svg/1200px-The_Leela_Palaces%2C_Hotels_and_Resorts_logo.svg.png" alt="" style="width: 15%;" class="grayscale">
+                          <img src="https://1000logos.net/wp-content/uploads/2021/07/IndiGo-Logo.png" alt="" style="width: 15%;" class="grayscale">
+                      </div>
+                  </div>
+                  <!-- Image column -->
+                  <div class="col-md-6 col-12">
+                      <img src="./Images/Artboard 1.svg" class="w-100 px-3 px-md-5 mb-5" alt="">
+                  </div>
+              </div>
+          </div>
+          
+        
+
+      </section>
+
+    <div class="container pb-5 text-center absolute-div w-md-100 gap-2">
+      <div class="bg-light shadow" style="padding: 40px; background-color: #008080;">
+        <div class="row">
+          <div class="col-md-3">
+              <div class="mb-3 ">
+                  <select class=" custom-select form-control p-4">
+                      <option selected="">Destination</option>
+                      <option value="1">Destination 1</option>
+                      <option value="2">Destination 2</option>
+                      <option value="3">Destination 3</option>
+                  </select>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="mb-3 mb-md-0">
+                  <input type="date" class="form-control p-4" id="depart-date" placeholder="Depart Date">
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="mb-3 mb-md-0">
+                  <input type="date" class="form-control p-4" id="return-date" placeholder="Return Date">
+              </div>
+          </div>
+          
+            <button class="btn btn-primary btn-block p-md-3 col-md-3 d-flex align-items-center justify-content-center" type="submit" style="height: 73px;  background-color: #008080; border: none;">Submit</button>
+        
+      </div>
+  </div>
+
+      </div>
+    </div>
+    
+    
+    
+
+      <section style="background-color: #f0f0f0; width: 100%;" class="my-5" style="position: relative; ">
+        <div class="row container-fluid" style="position: relative;">
+          <div class="col-md-12">
+            <!-- text -->
+            <div class="row py-5 d-flex justify-content-center align-items-center " style="font-size: 4vh; font-weight: 600;margin-top: 10%;margin-left: 15%;">
+              <div class="main-text">Discover your favourite</div>
+              <div class="sub-text">Destination</div>
+            </div>
+            <div class="d-flex flex-wrap md-container  gap-5"  style="margin-left: 15%; margin-bottom: 5%;">
+              <div class="card" style="width: 18rem;background-color: transparent; border: none;">
+                <img src="https://www.holidify.com/images/cmsuploads/compressed/Chek_Jawa,_Singapore_(3940295137)_20180523185844.jpg" class="card-img-top rounded-4" alt="...">
+                <div class="d-flex justify-content-between pt-3 mx-4 align-items-center">
+                    <p style="font-weight: 600; font-size: 2.5vh">Pulau Ubin</p>
+                    <p style="font-weight: 700; font-size: 2vh">20$</p>
+                  </div>
+                  <div class="d-flex gap-2 container-fluid" style="margin-top: -5%; margin-left: 2px;">
+                    <span style="font-size: 9px;"><box-icon name='map'></box-icon></span>
+                    <p>Singapore</p>
+                  </div>
+                  <div class="d-flex justify-content-around align-items-center mb-3">
+                    <div class="ratings ">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <button type="button" class="btn btn-outline-primary">Book</button>
+                </div>
+                </div>
+
+
+                <div class="card" style="width: 18rem;background-color: transparent;border:none;">
+                  <img src="https://www.travelcharacter.com/wp-content/uploads/2020/05/Bora-Bora.jpg" class="card-img-top rounded-4" alt="...">
+                  <div class="d-flex justify-content-between pt-3 mx-4 align-items-center">
+                      <p style="font-weight: 600; font-size: 2.5vh">Bora Island</p>
+                      <p style="font-weight: 700; font-size: 2vh">30$</p>
+                    </div>
+                    <div class="d-flex gap-2 container-fluid" style="margin-top: -5%; margin-left: 2px;">
+                      <span style="font-size: 9px;"><box-icon name='map'></box-icon></span>
+                      <p>French Polynesia</p>
+                    </div>
+                    <div class="d-flex justify-content-around align-items-center mb-3">
+                      <div class="ratings ">
+                          <i class="fa fa-star rating-color"></i>
+                          <i class="fa fa-star rating-color"></i>
+                          <i class="fa fa-star rating-color"></i>
+                          <i class="fa fa-star rating-color"></i>
+                          <i class="fa fa-star"></i>
+                      </div>
+                      <button type="button" class="btn btn-outline-primary">Book</button>
+                  </div>
+                  </div>
+
+
+
+                  <div class="card" style="width: 18rem;background-color: transparent; border:none">
+                    <img src="https://www.travelcharacter.com/wp-content/uploads/2020/05/guanajuato-min.jpg" class="card-img-top rounded-4" alt="...">
+                    <div class="d-flex justify-content-between pt-3 mx-4 align-items-center">
+                        <p style="font-weight: 600; font-size: 2.5vh">Guanajuato</p>
+                        <p style="font-weight: 700; font-size: 2vh">35$</p>
+                      </div>
+                      <div class="d-flex gap-2 container-fluid" style="margin-top: -5%; margin-left: 2px;">
+                        <span style="font-size: 9px;"><box-icon name='map'></box-icon></span>
+                        <p>Mexico</p>
+                      </div>
+                      <div class="d-flex justify-content-around align-items-center mb-3">
+                        <div class="ratings ">
+                            <i class="fa fa-star rating-color"></i>
+                            <i class="fa fa-star rating-color"></i>
+                            <i class="fa fa-star rating-color"></i>
+                            <i class="fa fa-star rating-color"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <button type="button" class="btn btn-outline-primary">Book</button>
+                    </div>
+                    </div>
+
+
+
+
+
+                    <div class="card" style="width: 18rem;background-color: transparent; box-shadow: none; border: none;">
+                      <img src="https://www.travelcharacter.com/wp-content/uploads/2020/05/bangkok-travel-min.jpg" class="card-img-top rounded-4" alt="...">
+                      <div class="d-flex justify-content-between pt-3 mx-4 align-items-center">
+                          <p style="font-weight: 600; font-size: 2.5vh">Bangkok</p>
+                          <p style="font-weight: 700; font-size: 2vh">25$</p>
+                        </div>
+                        <div class="d-flex gap-2 container-fluid" style="margin-top: -5%; margin-left: 2px;">
+                          <span style="font-size: 9px;"><box-icon name='map'></box-icon></span>
+                          <p>Thailand</p>
+                        </div>
+                        <div class="d-flex justify-content-around align-items-center mb-3">
+                          <div class="ratings ">
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star rating-color"></i>
+                              <i class="fa fa-star"></i>
+                          </div>
+                          <button type="button" class="btn btn-outline-primary">Book</button>
+                      </div>
+                      </div>
+
+
+                
+
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- about -->
+      
+      <section style="position: relative; margin-bottom: 8%;">
+        <div class="container-fluid py-5">
+          <div class="container pt-5">
+              <div class="row">
+                  <div class="col-lg-6" style="min-height: 500px;">
+                      <div class="position-relative h-100">
+                          <img class="position-absolute w-100 h-100" src="https://images.pexels.com/photos/2108845/pexels-photo-2108845.jpeg?cs=srgb&dl=pexels-amine-m%27siouri-2108845.jpg&fm=jpg" style="object-fit: cover;">
+                      </div>
+                  </div>
+                  <div class= "about1 col-lg-6 pt-5 pb-lg-5 ">
+                      <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
+                          <h6 class="text-uppercase" style="letter-spacing: 5px; color: #008080;">About Us</h6>
+                          <h1 class="mb-3">We Provide Best Tour Packages In Your Budget</h1>
+                          <p>Discover the perfect travel experience that fits your budget with our expertly crafted tour packages. Explore the world confidently while making the most of your money. Your dream vacation is just a click away.</p>
+                          <div class="row mb-4">
+                              <div class="col-6">
+                                  <img class="img-fluid" src="img/about-1.jpg" alt="">
+                              </div>
+                              <div class="col-6">
+                                  <img class="img-fluid" src="img/about-2.jpg" alt="">
+                              </div>
+                          </div>
+                          <a href="" class="btn btn-primary mt-1" style="background-color: #008080; border: none;">Book Now</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </section>
+
+
+      <!-- Service  -->
+    <section style="background-color: #f0f0f0;padding-bottom: 8%;position: relative;" >
+        <div class="container-fluid py-5">
+          <div class="container pt-5 pb-3">
+              <div class="text-center mb-3 pb-3">
+                  <h6 class="text-uppercase" style="letter-spacing: 5px; color: #008080;">Services</h6>
+                  <h1>Tours & Travel Services</h1>
+              </div>
+              <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-item bg-white text-center mb-2 py-5 px-4 hover-effect">
+                        <i class="fa fa-2x fa-route mx-auto mb-4"></i>
+                        <h5 class="mb-2">Travel Guide</h5>
+                        <p class="m-0">Explore the world with our travel guide. Discover new destinations, travel tips, and unforgettable adventures. Experience diverse cultures and savor delicious cuisine.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-item bg-white text-center mb-2 py-5 px-4 hover-effect">
+                        <i class="fa fa-2x fa-ticket-alt mx-auto mb-4"></i>
+                        <h5 class="mb-2">Ticket Booking</h5>
+                        <p class="m-0">Secure your journey with our ticket booking service. Reserve seats hassle-free, access exclusive deals, and ensure a smooth travel experience. Your next adventure begins with us</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-item bg-white text-center mb-2 py-5 px-4 hover-effect">
+                        <i class="fa fa-2x fa-hotel mx-auto mb-4"></i>
+                        <h5 class="mb-2">Hotel Booking</h5>
+                        <p class="m-0">Elevate your travel with our hotel booking service. Explore diverse lodging options, secure great rates, and ensure a pleasant stay. Your next destination awaits</p>
+                    </div>
+                </div>
+            </div>
+            
+          </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+  
+      <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 0%;">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                  <a class="navbar-brand fs-5 " href="#"><img src="./Images/logo.svg" class=" logo img-fluid logo" alt="" ></a>    
+                <p>Discover, Book, and Explore with Tourzo. Your dream vacation starts here.</p>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-outline-primary btn-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-primary btn-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-primary btn-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-primary btn-square mx-1" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Our Services</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Travel guide</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Ticket Booking</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Hotel Booking</a>
+                    <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Usefull Links</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Destination</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Services</a>
+                    <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+                <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+            </div>
+        </div>
+    </div>     
+    
+</body>
+</html>

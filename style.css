@@ -1,0 +1,161 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #008080;
+  }
+
+.btn.btn-outline-primary {
+    color: #008080 !important;
+    border-color: #008080 !important;
+}
+
+/* Customize the hover and focus styles */
+.btn.btn-outline-primary:hover,
+.btn.btn-outline-primary:focus {
+    color: #fff !important; /* Text color when hovered or focused */
+    background-color: #008080 !important; /* Background color when hovered or focused */
+    border-color: #008080 !important; /* Border color when hovered or focused */
+}
+.logo {
+    width: 280px; /* Adjust the width as needed */
+    height: auto; /* This maintains the aspect ratio */
+}
+
+.navbar .navbar-nav .nav-item {
+    position: relative;
+}
+
+.navbar .navbar-nav .nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffd700; /* Gold */
+    width: 0;
+    height: 4px;
+    transition: width 0.2s ease; /* Add a smooth transition effect */
+}
+
+.navbar .navbar-nav .nav-item:hover::after {
+    width: 100%;
+}
+.company_logos{
+    width: 12%;
+}
+
+.grayscale{
+    filter: grayscale(100%);
+    opacity: 75%;
+}
+
+.ratings{
+    margin-right:10px;
+}
+
+.ratings i{
+    
+    color:#cecece;
+    font-size:12px;
+}
+
+.rating-color{
+    color:#fbc634 !important;
+}
+.card {
+    width: 18rem;
+    background-color: transparent;
+    border: none;
+    height: 28rem; /* Set a fixed height for the cards */
+}
+
+.card img {
+    object-fit: cover; /* Ensure the image covers the entire card */
+    height: 100%; /* Make the image take up the full height of the card */
+    transition: transform 0.3s ease; /* Add a smooth transition for zoom effect */
+}
+
+/* Add hover effect to zoom in the image */
+.card:hover img {
+    transform: scale(1.1); /* Zoom in the image by 10% on hover */
+}
+.card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.pb-5, .py-5 {
+    padding-bottom: 3rem !important;
+}
+.container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.hover-effect {
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s; /* Add smooth transitions */
+}
+
+.hover-effect:hover {
+    transform: scale(1.1); /* Zoom effect */
+    background-color: #008080 !important; /* Background color change */
+    color: white !important; /* Text and icon color change */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Add elevation */
+    
+}
+.service-item {
+    height: 100%;
+}
+
+@media (min-width: 992px) {
+    .absolute-div {
+        position: absolute;
+        left: 50%;
+        bottom: -15%;
+        transform: translateX(-50%);
+    }
+    .about1 {
+        
+        position: absolute;
+        top: 20%;
+        left: 40%;
+        
+      }
+}
+@media (max-width: 768px) {
+    .navbar-brand img.logo {
+        max-width: 80%; /* Adjust the percentage to make the logo smaller */
+    }
+    .navbar-brand {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    input[type="date"] {
+        color: #000; /* Change the text color to black or a color of your choice */
+      }
+    
+      /* Adjust the placeholder text color */
+      input[type="date"]::placeholder {
+        color: #999; /* Change the placeholder text color to a lighter color */
+      }
+}
+
+
+ 
+    
+  
+
+  
+  
+  

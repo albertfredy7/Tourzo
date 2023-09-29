@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1366" height="768" viewBox="0 0 1366 768">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 10.01px;
+        fill: teal;
+        font-family: FuturaBT-ExtraBlackCondItalic, "Futura XBlkCnIt BT";
+        font-weight: 800;
+        font-style: italic;
+      }
+
+      .cls-2 {
+        fill: gold;
+      }
+    </style>
+  </defs>
+  <g id="Artboard_1" data-name="Artboard 1">
+    <text id="Tourzo" class="cls-1" transform="translate(305.5 417.147) scale(30.398)">Tour<tspan class="cls-2">zo</tspan></text>
+  </g>
+</svg>
